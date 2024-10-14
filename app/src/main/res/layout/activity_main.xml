@@ -13,7 +13,18 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="99dp"
         android:layout_marginTop="272dp"
-        android:text="Go to Second Activity"
+        android:text="Page 1"
+        android:textAllCaps="true"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/todoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="272dp"
+        android:text="Page 2"
         android:textAllCaps="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

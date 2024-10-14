@@ -21,11 +21,18 @@ class MainActivity : AppCompatActivity() {
 
         //explicit intent
         val explicitButton = findViewById<Button>(R.id.explicitButton)
+        val todoButton = findViewById<Button>(R.id.todoButton)
 
         explicitButton.setOnClickListener {
             val intent = Intent(this, SecondActiviry::class.java)
             startActivity(intent)
-            finish() //Optional: Finish the current activity if needed
+//            finish() //Optional: Finish the current activity if needed
+        }
+
+        todoButton.setOnClickListener {
+            val intent = Intent(this, ToDoActivity::class.java)
+            startActivity(intent)
+//            finish() //Optional: Finish the current activity if needed
         }
     }
 }
